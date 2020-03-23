@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.label_2.setFont(font)
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setWordWrap(True)
-        self.label_2.setObjectName("label_2")
+        self.label_2.setObjectName("label_22")
         self.label_3 = QtWidgets.QLabel(self.splitter)
         font = QtGui.QFont()
         font.setFamily("Georgia")
