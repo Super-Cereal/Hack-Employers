@@ -9,7 +9,7 @@ import random
 class Interface(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi(r'D:\111programming\Python\hack_employers\interface.ui', self)
+        uic.loadUi('interface.ui', self)
         self.run = False
 
     def update(self):
