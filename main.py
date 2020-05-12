@@ -14,12 +14,12 @@ class Interface(QMainWindow, Ui_MainWindow):
 
     def update(self):
         while True:
+            app.processEvents()
             if self.run:
                 x, y = random.randrange(0, WIDTH), random.randrange(0, HEIGHT)
                 time_dur = time_sleep = random.uniform(0.2, 1.5)
                 pyautogui.moveTo(x, y, duration=time_dur, tween=pyautogui.easeInOutQuad)
                 sleep(time_sleep)
-            app.processEvents()
 
     def keyPressEvent(self, event):
         if event.key() == 16777238:
